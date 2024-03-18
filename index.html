@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagenes/logoweb.png" type="image/png">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>  
+        <img src="imagenes/Logo.png" alt="logo de alura" class="logo">   
+        <h1 class="titulo">Encriptador Alura</h1>
+    </header>
+    <main>
+        <section class="textoIngresado">
+            <textarea cols="30" rows="10" id="ingresarTextoId" class="ingresarTexto" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="reglas">Solo letras minúsculas y sin acento</h6> 
+            </div>
+            <div class="botones">
+                <button onclick="btnEncriptar();" class="boton_funcional1" id="encripta">Encriptar</button>
+                <button onclick="btnDesencriptar();" class="boton_funcional2" value="Desencriptar" >Desencriptar</button>
+            </div>
+        </section>
+        <section class="textoMostrado">
+            <div class="texto_Muestra">
+                <textarea cols="20" rows="10" id="mostrarTextoId" class="mostrarTexto" placeholder="Texto encriptado"></textarea>
+            </div>       
+            <div class="botones_2">
+                <button onclick="copiarTexto();" class="copiar">Copiar</button>
+                <button onclick="borrarTexto();" class="borrar" id="borra">Borrar</button>
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <div class="piePagina">
+            <h6>Desiree Perez challenge del encriptador Alura 2024</h6>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>

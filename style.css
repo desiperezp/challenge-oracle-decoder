@@ -1,0 +1,221 @@
+*{
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+
+}
+
+body{
+    padding: 5px;
+}
+
+header {
+    display: flex; 
+    align-items: center;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 7%;
+}
+
+.titulo {
+    margin-left: 10px;
+    font-size: 32px; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700; 
+    color: #0A3871; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #0A3871; 
+    padding-bottom: 5px; 
+}
+
+main{
+    display: flex; 
+    margin-bottom: 50px;
+    margin-block: 10px;
+    margin-left: 50px;
+    width: 940px;
+    position: relative;
+    align-items: center; 
+}
+
+.ingresarTexto{
+    border: none;
+    color: #0A3871;
+    margin-top: 20px;
+    text-transform: lowercase;
+    height: 350px;
+    user-select: none;
+}
+
+::placeholder{ color: #D8DFE8;} 
+  .ingresarTexto:focus{ 
+    outline: none;
+}
+
+
+
+.mostrarTexto{
+    background: white; 
+    background-image: url("imagenes/Muñeco.png") ;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 23%; 
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 150px;
+    margin-top: -30px; 
+    height: 440px;
+    width: 400px;
+    text-align:center;
+    text-transform: lowercase;
+}
+
+.mostrarTexto:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.boton_funcional1 {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 45px;
+    width: 250px;
+    font-size: 20px;
+    transform: translateY(-15px);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.boton_funcional1:hover {
+    transform: translateY(-10px); 
+    background-color: #0F4C9E; 
+    color: #F3F5FC; 
+}
+
+.reglas:before{
+    content: "🛈";
+    margin-right: 3px;
+}
+.reglas{
+    color:lightslategray;
+    font-size: 16px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.boton_funcional2 {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 45px;
+    margin-left: 30px;
+    width: 250px;
+    font-size: 20px;
+    transform: translateY(-15px);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.boton_funcional2:hover {
+    transform: translateY(-10px); 
+    background-color: #B1B9C8; 
+    color: #1E3A68; 
+}
+
+.botones_2{
+    display: flex; 
+    padding-left: 10px;
+}
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 45px;
+    width: 150px;
+    font-size: 20px;
+    padding-top: -30px;
+    margin-right: 10px;
+    margin-left: 200px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.copiar:hover {
+    transform: scale(1.05); 
+    background-color: #B1B9C8; 
+    color: #1E3A68; 
+}
+
+.borrar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 45px;
+    width: 150px;
+    font-size: 20px;
+    padding-top: -30px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.borrar:hover {
+    transform: scale(1.05); 
+    background-color: #B1B9C8; 
+    color: #1E3A68; 
+}
+
+.piePagina{
+    color:lightslategray;
+    font-size: 15px;
+    text-align: center;
+    padding: 0px;
+
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column; 
+        margin-left: 20px; 
+        width: auto; 
+    }
+
+    .mostrarTexto {
+        margin-left: 0;
+        width: 100%; 
+        margin-top: 20px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 15%; 
+    }
+
+    .titulo {
+        font-size: 24px; 
+    }
+
+    .mostrarTexto {
+        height: 300px; 
+    }
+
+    .botones {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
